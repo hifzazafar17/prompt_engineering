@@ -1,17 +1,15 @@
 # The Complete AI Prompting Framework: 6-Step Formula for 10× Better Results
 
 > **Based on:** [How To Prompt ChatGPT The RIGHT WAY In 2025 (you're doing it wrong)](https://www.youtube.com/watch?v=pv_sAnH_P8Q)  
-> **Authored in the style of Andrej Karpathy** — systems thinker, code-first, zero fluff, maximal signal.
-
 ---
 
 > **Most people are using LLMs wrong.**  
 > They treat them like Google: short queries, new sessions, zero memory, no structure.  
-> This is like compiling C code with `-O0` and no type system — it *runs*, but you’re leaving 10× performance on the table.
+> This is like compiling C code with `-O0` and no type system — it *runs*, but you’re leaving **10× performance on the table**.
 
 This is the **complete, production-grade prompting framework** that turns stochastic token generators into **reliable cognitive engines**.
 
-It works on **any frontier LLM** (GPT-4o, Claude 3.5, Gemini 1.5, Grok 4, Llama 3.1) because it’s built on **first principles** of how autoregressive transformers actually work.
+It works on **any frontier LLM** (GPT-4o, Claude 3.5, Gemini 1.5, **Grok 4**, Llama 3.1) because it’s built on **first principles** of how autoregressive transformers actually work.
 
 ---
 
@@ -132,7 +130,7 @@ Return valid JSON:
 ### 4. **ROLEPLAY**: Activate Latent Expert Personas
 
 LLMs are **ensembles of simulated experts**.  
-Your role prompt **routes to the right sub-network** (especially in MoE models).
+Your role prompt **routes to the right sub-network** (especially in MoE models like **Grok 4**).
 
 #### Template:
 ```text
@@ -214,41 +212,149 @@ Stop when questions repeat
 
 ---
 
-## Full Framework Example (Copy-Paste Ready)
+## Full Framework Examples (Copy-Paste Ready)
+
+Below are **three production-grade, battle-tested prompt templates** using the full **6-Part Framework**.  
+Each is ready to paste into **ChatGPT, Claude, Gemini, or Grok** — no edits needed.
+
+---
+
+### **Example 1: Personal Fitness & Nutrition Plan**
 
 ```text
 **COMMAND**
-Recommend a tax-efficient, diversified investment strategy
+Design a 12-week strength and body recomposition program
 
 **CONTEXT**
-for a 32-year-old staff software engineer in San Francisco (TC: $220k, expenses: $90k/yr), 
-with $25k cash, $15k BTC, no debt, saving for $1.2M home in 5 years 
-while preserving early retirement optionality
+for a 38-year-old desk worker (male, 5'10", 195 lbs, ~25% body fat), 
+sedentary job, trains 3–4x/week at home with dumbbells (5–50 lbs) and a pull-up bar, 
+goal: lose 15 lbs fat, gain 5 lbs muscle, improve energy and sleep, 
+injuries: mild lower back discomfort (avoid heavy deadlifts), 
+diet: cooks at home, no allergies, prefers high-protein meals under 30 min prep
 
 **LOGIC**
-For each asset: name, target %, rationale, tax implications, 1–2 example funds/ETFs.
-Include rebalancing rules and liquidity plan.
+For each week: list workout days, exercises (sets x reps), progression rule, 
+and daily meal structure (macros + 1 sample meal per type). 
+Include deload week every 4th week. Prioritize compound movements and sleep hygiene.
 
 **ROLEPLAY**
-You are a Certified Financial Planner (CFP) with 15 years experience 
-advising Bay Area tech professionals on mid-term wealth accumulation. 
-You are conservative, tax-aware, and behavioral-coach trained.
+You are a NSCA-CSCS certified strength coach and precision nutrition specialist 
+with 12 years coaching remote tech professionals. 
+You emphasize sustainable adherence, progressive overload, and recovery science.
 
 **FORMATTING**
 Structure as:
-1. Executive Summary (3 sentences)
-2. Asset Allocation Table (Markdown)
-3. Implementation Timeline (numbered)
-4. Risk & Contingency Plan (checklist)
-5. Tax Optimization Notes
+1. Program Overview (goal, timeline, equipment)
+2. Weekly Training Schedule (Markdown table: Day | Focus | Exercises)
+3. Nutrition Blueprint (daily macros, meal timing, sample day)
+4. Progression & Deload Rules
+5. Recovery Checklist (sleep, stress, mobility)
 
 **QUESTIONS**
-Ask me 10 questions to refine this further — focus on:
-- Tax situation (RSUs, cap gains, 401k)
-- Behavioral risk tolerance
-- Family/fiancé financial alignment
-- Liquidity needs
+Ask me 10 questions to personalize this further — focus on:
+- Current training history and PRs
+- Sleep schedule and stress levels
+- Cooking bandwidth and meal prep time
+- Supplement use and bloodwork (if any)
+- Aesthetic vs. performance priority
 ```
+
+---
+
+### **Example 2: SaaS Product Launch Go-To-Market Strategy**
+
+```text
+**COMMAND**
+Build a 90-day GTM launch plan for a B2B SaaS product
+
+**CONTEXT**
+Product: AI-powered meeting intelligence platform (auto-transcribes, summarizes, assigns action items), 
+target: mid-market sales teams (20–200 reps), 
+pricing: $29/user/mo (annual) or $39/mo, 
+current stage: closed beta with 8 pilot customers (NPS 82), 
+team: 1 PM, 1 designer, 2 engineers, 1 part-time marketer, 
+budget: $45k for paid + content, 
+competitors: Otter.ai, Gong, Fireflies, 
+launch goal: 50 paid customers and $100k ARR in 90 days
+
+**LOGIC**
+For each phase (Pre-Launch, Launch Week, Post-Launch): 
+list key milestones, marketing channels, content assets, sales outreach cadence, 
+and success metrics. Include A/B test plan for pricing page and email sequences.
+
+**ROLEPLAY**
+You are a former Head of Growth at a Series B SaaS (ex-Intercom, Pipedrive), 
+specialized in PLG + sales-assisted motions for dev/tooling products. 
+You’ve launched 4 products past $1M ARR. Data-driven, scrappy, ROI-obsessed.
+
+**FORMATTING**
+Structure as:
+1. Launch Objectives & KPIs
+2. 90-Day Timeline (Markdown roadmap table)
+3. Channel Strategy Matrix (Channel | Tactic | Budget | Owner)
+4. Content Calendar (Week | Asset | Goal)
+5. Sales Playbook Snippet (outbound email + demo script)
+6. Risk Mitigation Plan
+
+**QUESTIONS**
+Ask me 10 questions to sharpen this plan — focus on:
+- Pilot customer feedback themes
+- Sales team capacity and ICP clarity
+- Website conversion benchmarks
+- Existing email list size and open rates
+- Competitor differentiation (per pilots)
+```
+
+---
+
+### **Example 3: Technical Documentation from Code (Python → Markdown)**
+
+```text
+**COMMAND**
+Generate complete, production-ready API documentation from Python code
+
+**CONTEXT**
+Codebase: FastAPI microservice for image background removal, 
+endpoints: POST /remove, GET /health, POST /batch, 
+auth: API key in header, 
+input: multipart/form-data image (JPG/PNG < 10MB), 
+output: PNG with transparent background, 
+rate limits: 100 req/min per key, 
+hosted on AWS Lambda + API Gateway, 
+target users: frontend devs integrating into web apps
+
+**LOGIC**
+For each endpoint: extract method, path, summary, parameters (path, query, body), 
+request example, response model, error codes, and rate limit logic. 
+Infer types from Pydantic models and docstrings. Include curl example.
+
+**ROLEPLAY**
+You are a senior backend engineer and technical writer (ex-ReadTheDocs, Postman), 
+author of 3 open-source SDKs with 10k+ stars. 
+You write docs that reduce support tickets by 80%.
+
+**FORMATTING**
+Output as valid Markdown with:
+- H1: API Reference
+- H2 per endpoint
+- YAML OpenAPI snippet (code block)
+- Curl example (```bash
+- Python requests example (```python)
+- Error table: Code | Message | Fix
+
+**QUESTIONS**
+Ask me 8 questions to improve accuracy — focus on:
+- Actual Pydantic model definitions
+- Custom error classes and messages
+- Pagination or webhook plans
+- SDK generation intent (JS, Python, etc.)
+- Monitoring/alerting integration
+```
+
+---
+
+**Use these templates as your starting point.**  
+Replace only the **CONTEXT** and **QUESTIONS** sections for your use case — the rest is framework-complete.
 
 ---
 
@@ -303,4 +409,3 @@ The future belongs to those who **prompt like engineers**.
 
 ---
 
-```
